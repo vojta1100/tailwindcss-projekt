@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <link rel="stylesheet" href="static/main.css">
+
+    <style>
+        @media (min-width: 768px) and (max-width: 930px) {
+            .mid-break-img {
+                max-width: 250px !important;
+            }
+            .mid-break-wrapper {
+                max-width: 360px !important;
+            }
+            .mid-break-h1 {
+                font-size: 1.9rem !important;
+            }
+            .mid-break-p {
+                font-size: 1rem !important;
+            }
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center">
+    <section id="header" class="bg-[var(--main-color)] h-auto sm:h-[37rem] w-full px-7 sm:px-[10%] flex-col flex items-stretch">
+        <nav class="w-full flex flex-row pt-7 justify-between">
+            <div class="flex items-center space-x-3 justify-center sm:justify-start">
+                <img src="static/web_images/logo.svg" class="w-12 sm:w-[70px]" alt="logo">
+                <h2 class="text-3xl text-white font-medium">Start</h2>
+            </div>
+
+            <div id="links" class="hidden flex md:flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-8 absolute md:static top-20 left-4 right-4 z-50 bg-[var(--main-color)] md:bg-transparent text-white text-lg rounded-xl md:rounded-none shadow-xl md:shadow-none p-6 md:p-0 items-center justify-center md:mt-0">
+                <a href="">Home</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <button class="block md:hidden" id="menu-btn">
+                <img class="w-12" id="menu-icon" src="static/web_images/menu.svg" alt="menu">
+                <img class="w-12 hidden" id="close-icon" src="static/web_images/close.svg" alt="close">
+            </button>
+        </nav>
+
+        <div class="flex flex-col-reverse md:flex-row justify-between items-center h-full mt-10 sm:mt-0">
+            <div class="font-worksans text-white md:mr-6 text-left px-4 md:px-0 mid-break-wrapper" style="max-width: 420px;">
+                <h2 class="tracking-widest font-black pb-3" style="letter-spacing: 5px; font-weight: 900;">WELCOME</h2>
+                <h1 class="font-crimson text-3xl sm:text-4xl font-bold leading-12 pb-3 mid-break-h1">Lorem ipsum dolor sit amet consectetur</h1>
+                <p class="text-base sm:text-lg text-white/75 mid-break-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+                <button class="mt-5 rounded-sm px-11 py-2 cursor-pointer bg-white text-black mb-8">Explore</button>
+            </div>
+
+            <img class="w-full md:w-auto max-w-[240px] md:max-w-md mid-break-img mb-10 md:mb-0" src="static/web_images/img1.svg" alt="">
+        </div>
+
+    </section>
+
+    <section id="portfolio" class="flex flex-col items-center justify-center px-5 sm:px-25 text-center">
+        <div class="pt-15 flex flex-col items-center font-worksans" style="max-width: 410px;">
+            <h2 class="tracking-widest font-black pb-3 text-[var(--main-color)]" style="letter-spacing: 5px; font-weight: 900;">PARTNERS</h2>
+            <h1 class="font-crimson text-2xl sm:text-4xl font-bold leading-12 pb-3">Lorem Ipsum Dolor</h1>
+            <p class="text-xl sm:text-xl pt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="flex flex-wrap justify-center items-center mt-12 gap-8 sm:gap-18">
+            <img class="my-4 sm:my-2 max-w-[120px]" src="static/web_images/google.svg" alt="google">
+            <img class="my-4 sm:my-2 max-w-[120px]" src="static/web_images/microsoft.svg" alt="microsoft">
+            <img class="my-4 sm:my-2 max-w-[120px]" src="static/web_images/airbnb.svg" alt="airbnb">
+            <img class="my-4 sm:my-2 max-w-[120px]" src="static/web_images/facebook.svg" alt="facebook">
+            <img class="my-4 sm:my-2 max-w-[120px]" src="static/web_images/spotify.svg" alt="spotify">
+        </div>
+
+        <button class="mt-12 text-white bg-[#212529] px-8 py-2.5 rounded-sm text-lg cursor-pointer">Learn More</button>
+    </section>
+
+    <section id="services" class="mw-1200 md:flex-row py-14 w-full px-5 md:px-15 flex-col flex items-center justify-between text-left">
+        <img class="w-full md:w-auto max-w-xs md:max-w-md mb-10 md:mb-0" src="static/web_images/img2.svg" alt="img2">
+        
+        <div class="font-worksans text-black h-fit" style="max-width: 420px;">
+            <h1 class="font-crimson text-3xl sm:text-4xl md:text-3xl lg:text-4xl font-bold leading-12 pb-3">Lorem ipsum dolor sit amet consectetur</h1>
+            <p class="text-base sm:text-md text-[#212529]/50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+            <button class="mt-5 sm:mt-12 text-white bg-[#212529] px-8 py-2.5 rounded-sm text-lg cursor-pointer">Learn More</button>
+        </div>
+
+    </section>
+
+    <section class="mw-1200 md:flex-row py-1 sm:py-14 w-full px-5 md:px-15 flex-col-reverse flex items-center justify-between text-left">
+        <div class="font-worksans text-black h-fit mb-10 md:mb-0" style="max-width: 420px;">
+            <h1 class="font-crimson text-3xl sm:text-4xl md:text-3xl lg:text-4xl font-bold leading-12 pb-3">Lorem ipsum dolor sit amet consectetur</h1>
+            <p class="text-base sm:text-md text-[#212529]/50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+            <button class="mt-5 sm:mt-12 text-white bg-[#212529] px-8 py-2.5 rounded-sm text-lg cursor-pointer">Learn More</button>
+        </div>
+
+        <img class="w-full md:w-auto max-w-xs md:max-w-md" src="static/web_images/img3.svg" alt="img2">
+    </section>
+
+    <section id="contact" class="flex flex-col items-center justify-center px-5 md:px-15 text-center">
+        <div class="flex flex-col items-center font-worksans" style="max-width: 410px;">
+            <h2 class="tracking-widest font-black pb-3 text-[var(--main-color)]" style="letter-spacing: 5px; font-weight: 900;">TEAM</h2>
+            <h1 class="font-crimson text-2xl sm:text-4xl font-bold leading-12 pb-3">Our Talents</h1>
+            <p class="text-lg sm:text-xl pt-2">Lorem ipsum, dolor sit amet consectetur Suscipit nemo hic quos, ab,</p>
+        </div>
+
+        <div class="flex flex-wrap justify-center items-center mt-12 gap-8 sm:gap-10">
+            <div class="shadow-[3px_4px_12px_1px_rgba(0,0,0,0.25)] px-10 py-4 text-left">
+                <img src="static/web_images/profile1.svg" alt="profile_img">
+                
+                <div>
+                    <h2 class="text-xl font-semibold pt-4">Peg Legge</h2>
+                    <p class="pt-2 text-sm text-black/50">CEO</p>
+                </div>
+            </div>
+
+            <div class="shadow-[3px_4px_12px_1px_rgba(0,0,0,0.25)] px-10 py-4 text-left">
+                <img src="static/web_images/profile2.svg" alt="profile_img">
+                
+                <div>
+                    <h2 class="text-xl font-semibold pt-4">Richard Guerra</h2>
+                    <p class="pt-2 text-sm text-black/50">CTO</p>
+                </div>
+            </div>
+
+            <div class="shadow-[3px_4px_12px_1px_rgba(0,0,0,0.25)] px-10 py-4 text-left">
+                <img src="static/web_images/profile3.svg" alt="profile_img">
+                
+                <div>
+                    <h2 class="text-xl font-semibold pt-4">Alexandra Stolz</h2>
+                    <p class="pt-2 text-sm text-black/50">DESIGNER</p>
+                </div>
+            </div>
+
+            <div class="shadow-[3px_4px_12px_1px_rgba(0,0,0,0.25)] px-10 py-4 text-left">
+                <img src="static/web_images/profile4.svg" alt="profile_img">
+                
+                <div>
+                    <h2 class="text-xl font-semibold pt-4">Janet Bray</h2>
+                    <p class="pt-2 text-sm text-black/50">DEVELOPER</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="mt-12 text-white bg-[#212529] px-8 py-2.5 rounded-sm text-lg cursor-pointer">View Team</button>
+    </section>
+
+
+    <footer class="mt-12 bg-[var(--main-color)] flex flex-col md:flex-row items-center justify-between px-5 sm:px-25 py-10 text-center sm:text-left w-full">
+        <div class="flex flex-row flex-wrap justify-center sm:justify-start gap-5 mb-5 md:mb-0">
+            <img class="cursor-pointer" src="static/web_images/facebook-small.svg" alt="link">
+            <img class="cursor-pointer" src="static/web_images/instagram-small.svg" alt="link">
+            <img class="cursor-pointer" src="static/web_images/twitter-smalll.svg" alt="link">
+            <img class="cursor-pointer" src="static/web_images/pinterest-small.svg" alt="link">
+            <img class="cursor-pointer" src="static/web_images/tiktok-small.svg" alt="link">
+            <img class="cursor-pointer" src="static/web_images/whatsapp-small.svg" alt="link">
+            <img class="cursor-pointer" src="static/web_images/youtube-small.svg" alt="link">
+
+        </div>
+
+        <p class="text-white text-sm sm:text-base">© Start, 2022. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+        const links = document.getElementById('links');
+
+        function toggleMenu(show) {
+            links.classList.toggle('hidden', !show);
+            menuIcon.classList.toggle('hidden', show);
+            closeIcon.classList.toggle('hidden', !show);
+        }
+
+        menuBtn.addEventListener('click', () => {
+            const isVisible = !links.classList.contains('hidden');
+            toggleMenu(!isVisible);
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 640) {
+                toggleMenu(true);
+            } else {
+                toggleMenu(false);
+            }
+        });
+
+        links.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth < 640) {
+                    toggleMenu(false);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

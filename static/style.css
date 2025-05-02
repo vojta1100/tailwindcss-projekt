@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --main-color: #74C69D;
+  --btn-color: #212529;
+  --text-color: #000;
+  --bg-color: #fff;
+  --font-crimson: "Crimson Text", serif;
+  --font-worksans: "Work Sans", sans-serif;
+  --font-main: var(--font-crimson);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.mw-1200 {
+  max-width: 1200px;
+}
